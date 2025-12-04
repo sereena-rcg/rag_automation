@@ -9,9 +9,8 @@ await wait(1000);
   click: (step, kb) => {
     const el = kb[step.locator];
     const safeSelector = el.selector.replace(/'/g, "\\'");
-    const textFilter = el.text ? `, { hasText: '${el.text}' }` : '';
     return `
-await page.locator('${safeSelector}'${textFilter}).click();
+await page.locator('${safeSelector}').click();
 console.log('✓ ${step.description}');
 await wait(1000);
 `;
