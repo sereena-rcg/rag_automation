@@ -1,0 +1,332 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - navigation [ref=e9]:
+        - link "Go to home page" [ref=e11] [cursor=pointer]:
+          - /url: ""
+        - generic [ref=e12]:
+          - button "Welcome Sereena" [ref=e14] [cursor=pointer]: Welcome Sereena
+          - link "Data privacy control" [ref=e17] [cursor=pointer]:
+            - /url: ""
+          - link "Search booking or cart" [ref=e19] [cursor=pointer]:
+            - /url: ""
+          - link [ref=e21] [cursor=pointer]:
+            - /url: javascript:;
+          - generic [ref=e24]: SwitchTo MFE
+      - generic [ref=e30]:
+        - generic [ref=e33]:
+          - generic [ref=e35]:
+            - generic:
+              - generic:
+                - list
+            - generic [ref=e36]:
+              - generic [ref=e38]:
+                - heading "Direct Customer" [level=2] [ref=e41]
+                - generic [ref=e42]:
+                  - generic [ref=e43]:
+                    - generic: CRM ID
+                    - combobox "CRM ID" [ref=e44]
+                  - generic [ref=e45]:
+                    - generic: Loyalty ID
+                    - combobox "Loyalty ID" [ref=e46]
+                  - generic [ref=e47]:
+                    - generic: First Name
+                    - combobox "First Name" [active] [ref=e48]
+                  - generic [ref=e49]:
+                    - generic: Last Name
+                    - combobox "Last Name" [ref=e50]
+                  - generic [ref=e51]:
+                    - generic: Email
+                    - textbox "Email" [ref=e52]:
+                      - /placeholder: Email(exact search)
+                  - generic [ref=e53]:
+                    - generic: Phone
+                    - combobox "Phone" [ref=e54]
+                - generic:
+                  - button "Load" [ref=e55] [cursor=pointer]
+                  - button "Clear" [ref=e56] [cursor=pointer]
+                - link "Advanced Search" [ref=e58] [cursor=pointer]:
+                  - /url: javascript:;
+              - generic [ref=e60]:
+                - heading "Agency" [level=2] [ref=e63]
+                - generic [ref=e64]:
+                  - generic [ref=e65]:
+                    - generic: Agency Code
+                    - combobox "Agency Code" [ref=e66]
+                  - combobox [ref=e68]
+                  - combobox [ref=e70]
+                  - combobox [ref=e72]
+                  - combobox [ref=e74]
+                  - combobox [ref=e76]
+                - generic:
+                  - button "Load" [ref=e77] [cursor=pointer]
+                  - button "Clear" [ref=e78] [cursor=pointer]
+                - link "Advanced Search" [ref=e80] [cursor=pointer]:
+                  - /url: javascript:;
+          - link "View profile" [ref=e81]:
+            - /url: ""
+        - generic [ref=e83]:
+          - tablist [ref=e85]:
+            - tab "New FIT Booking" [ref=e86]:
+              - link "New FIT Booking" [ref=e87] [cursor=pointer]:
+                - /url: "#newbooking"
+            - tab "New Group Booking" [ref=e88]:
+              - link "New Group Booking" [ref=e89] [cursor=pointer]:
+                - /url: ""
+            - tab "Retrieve Bookings" [ref=e90]:
+              - link "Retrieve Bookings" [expanded] [ref=e91] [cursor=pointer]:
+                - /url: "#Retrievebooking"
+            - tab
+            - tab "Import PNR" [ref=e92]:
+              - link "Import PNR" [ref=e93] [cursor=pointer]:
+                - /url: "#Importpnr"
+            - tab "Journey Planner" [ref=e94]:
+              - link "Journey Planner" [ref=e95] [cursor=pointer]:
+                - /url: ""
+            - tab "Bulk Upload" [ref=e96]:
+              - link "Bulk Upload" [ref=e97] [cursor=pointer]:
+                - /url: "#bulkUpload"
+          - generic [ref=e98]:
+            - text:   ✓   ✓ PRE CRUISE ✓ ✓ ✓ ALONG SAILING   
+            - tabpanel:
+              - generic [ref=e102]:
+                - generic:
+                  - generic:
+                    - list
+                - generic [ref=e103]: Retrieve Booking Search
+                - generic [ref=e104]:
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: Booking Ref No / Cart ID / Cart Name
+                    - textbox "Booking Ref No/CartID" [ref=e107]: G22232
+                  - generic [ref=e108]:
+                    - generic [ref=e109]: Provider Confirmation Number
+                    - textbox "provider confirmation number" [ref=e110]
+                  - generic [ref=e111]:
+                    - generic [ref=e112]: Migrated Reference Number
+                    - textbox "Migrated Reference Number" [ref=e113]
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: E-ticket Number
+                    - textbox "eticket number" [ref=e116]
+                  - generic [ref=e117]:
+                    - generic [ref=e118]: Agency Ref Number
+                    - textbox "Agency Ref Number" [ref=e119]
+                - generic [ref=e121]:
+                  - generic [ref=e122]:
+                    - generic [ref=e123]: Passenger First Name
+                    - textbox "passenger first name" [ref=e124]
+                  - generic [ref=e125]:
+                    - generic [ref=e126]: Passenger Last Name
+                    - textbox "passenger last name" [ref=e127]
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Customer Profile ID
+                    - textbox "customer profile id" [ref=e130]
+                  - generic [ref=e131]:
+                    - generic [ref=e132]: CRM ID
+                    - textbox "CRM ID" [ref=e133]
+                  - generic [ref=e134]:
+                    - generic [ref=e135]: Phone Number
+                    - textbox "phone number" [ref=e136]
+                  - generic [ref=e137]:
+                    - generic [ref=e138]: Email Address
+                    - textbox "email address" [ref=e139]
+                  - generic [ref=e140]:
+                    - generic [ref=e141]: Credit/Debit Card Number
+                    - textbox "credit/debit cardnumber" [disabled] [ref=e142]
+                  - generic [ref=e143]:
+                    - generic [ref=e144]: Card Type
+                    - textbox "card type" [disabled] [ref=e145]
+                  - generic [ref=e146]:
+                    - generic [ref=e147]: Travel Document Number
+                    - textbox "travel document number" [ref=e148]
+                  - generic [ref=e149]:
+                    - generic [ref=e150]: Frequent Flyer ID
+                    - textbox "frequent flyer id" [disabled] [ref=e151]
+                - generic [ref=e152]:
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: Group ID
+                    - textbox "group id" [ref=e155]
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: Agency Code
+                    - list [ref=e159]:
+                      - listitem [ref=e160]: Select
+                  - generic [ref=e161]:
+                    - generic [ref=e162]: Agency Name
+                    - list [ref=e164]:
+                      - listitem [ref=e165]: Select
+                  - generic [ref=e166]:
+                    - generic [ref=e167]: Agent ID
+                    - list [ref=e169]:
+                      - listitem [ref=e170]: Select
+                  - generic [ref=e171]:
+                    - generic [ref=e172]: Agent Name
+                    - list [ref=e174]:
+                      - listitem [ref=e175]: Select
+                  - generic [ref=e176]:
+                    - generic [ref=e177]: Search As
+                    - generic [ref=e178]:
+                      - generic [ref=e181] [cursor=pointer]: Creator POS
+                      - text: ⚫
+                      - generic [ref=e184] [cursor=pointer]: Booking Owner
+                  - generic [ref=e185]:
+                    - generic [ref=e186]: Booking Destination
+                    - list [ref=e188]:
+                      - listitem [ref=e189]: Select
+                  - generic [ref=e190]:
+                    - generic [ref=e191]: Travel Date Range
+                    - textbox "Start Date" [ref=e192]
+                  - textbox "End Date" [ref=e195]
+                  - generic [ref=e196]:
+                    - generic [ref=e197]: Booking Type
+                    - generic [ref=e198]:
+                      - generic [ref=e201] [cursor=pointer]: Group
+                      - text: ⚫
+                      - generic [ref=e204] [cursor=pointer]: Individual
+                - generic [ref=e205]:
+                  - generic [ref=e206]:
+                    - generic [ref=e207]: Booking Status
+                    - list [ref=e209]:
+                      - listitem [ref=e210]
+                    - textbox [ref=e211]:
+                      - /placeholder: " "
+                  - generic [ref=e212]:
+                    - generic [ref=e213]: Booking /Cart Date Range
+                    - textbox "Start Date" [ref=e214]
+                  - textbox "End Date" [ref=e217]
+                  - generic [ref=e218]:
+                    - generic [ref=e219]: Payment Time Limit Date Range
+                    - textbox "Start Date" [ref=e220]
+                  - textbox "End Date" [ref=e223]
+                  - generic [ref=e224]:
+                    - generic [ref=e225]: Payment Status
+                    - list [ref=e227]:
+                      - listitem [ref=e228]
+                    - textbox [ref=e229]:
+                      - /placeholder: " "
+                  - generic [ref=e230]:
+                    - generic [ref=e231]: Supplier Code
+                    - textbox "Supplier Code" [ref=e232]
+                  - generic [ref=e233]:
+                    - generic [ref=e234]: Vendor Confirmation Number
+                    - textbox "Vendor Confirmation Number" [ref=e235]
+                  - generic [ref=e236]:
+                    - generic [ref=e237]: Other Confirmation Number
+                    - textbox "Other Confirmation Number" [ref=e238]
+                - generic [ref=e240]:
+                  - generic [ref=e241]:
+                    - generic [ref=e242]: Number of Bookings
+                    - textbox "number of bookings" [ref=e243]
+                  - generic [ref=e244]:
+                    - generic [ref=e245]: Created/Modified
+                    - generic [ref=e246]:
+                      - link "created/modified" [ref=e247] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - generic [ref=e248]: created/modified
+                      - textbox [ref=e251]
+                    - textbox "created/modified" [ref=e252]
+                  - generic [ref=e253]:
+                    - generic [ref=e254]: User
+                    - textbox "user" [ref=e255]
+                  - generic [ref=e256]:
+                    - generic [ref=e257]: Market
+                    - list [ref=e259]:
+                      - listitem [ref=e260]: Select
+                    - textbox "Select" [ref=e261]
+                  - generic [ref=e262]:
+                    - generic [ref=e263]: Channel
+                    - list [ref=e265]:
+                      - listitem [ref=e266]: Select
+                    - textbox "Select" [ref=e267]
+                  - generic [ref=e268]:
+                    - generic [ref=e269]: Currency
+                    - list [ref=e271]:
+                      - listitem [ref=e272]: Select
+                    - textbox "Select" [ref=e273]
+                  - generic [ref=e274]:
+                    - generic [ref=e275]: Booking Category
+                    - textbox "Booking Category" [ref=e276]
+                  - generic [ref=e277]:
+                    - generic [ref=e278]: GIF Completed
+                    - generic [ref=e279]:
+                      - link "GIF Status" [ref=e280] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                        - generic [ref=e281]: GIF Status
+                      - textbox [ref=e284]
+                    - textbox "GIF Status" [ref=e285]
+                  - text: ⚫
+                - generic [ref=e288]:
+                  - generic [ref=e289]: Search Only
+                  - generic [ref=e290]:
+                    - checkbox [ref=e291]
+                    - generic [ref=e293] [cursor=pointer]: Surprise Bookings
+                  - generic [ref=e294]:
+                    - checkbox [ref=e295]
+                    - generic [ref=e297] [cursor=pointer]: Missing PAX Info Bookings
+                - tablist [ref=e298]:
+                  - tab " Cruise" [ref=e299] [cursor=pointer]:
+                    - generic [ref=e300]: 
+                    - text: Cruise
+                  - text: 
+                  - tab " Air" [ref=e301] [cursor=pointer]:
+                    - generic [ref=e302]: 
+                    - text: Air
+                  - tab " Hotel" [ref=e303] [cursor=pointer]:
+                    - generic [ref=e304]: 
+                    - text: Hotel
+                  - tab " Activity" [ref=e305] [cursor=pointer]:
+                    - generic [ref=e306]: 
+                    - text: Activity
+                  - tab " Transfer" [ref=e307] [cursor=pointer]:
+                    - generic [ref=e308]: 
+                    - text: Transfer
+                - generic [ref=e309]:
+                  - generic [ref=e310]: Search In
+                  - generic [ref=e311]:
+                    - generic [ref=e314] [cursor=pointer]: Cart
+                    - text: ⚫
+                    - generic [ref=e317] [cursor=pointer]: Booking
+                    - generic [ref=e320] [cursor=pointer]: Both
+                - button "Search" [ref=e323] [cursor=pointer]
+            - tabpanel
+        - generic [ref=e326]:
+          - heading "+ My Tasks Tasks Service Requests" [level=1] [ref=e331]:
+            - generic [ref=e332]: +
+            - link "My Tasks" [ref=e333] [cursor=pointer]:
+              - /url: ""
+            - generic [ref=e334]:
+              - radio "Tasks" [checked] [ref=e335]: ⚫
+              - generic [ref=e336] [cursor=pointer]: Tasks
+              - radio "Service Requests" [ref=e337]
+              - generic [ref=e338] [cursor=pointer]: Service Requests
+          - heading "+ My Recent Bookings/Carts" [level=1] [ref=e343]:
+            - generic [ref=e344]: +
+            - link "My Recent Bookings/Carts" [ref=e345] [cursor=pointer]:
+              - /url: ""
+    - generic [ref=e348]:
+      - generic [ref=e349]:
+        - link "Minicart" [ref=e350] [cursor=pointer]:
+          - /url: ""
+          - generic "Minicart" [ref=e351]
+        - link "Scratchpad" [ref=e352]:
+          - /url: ""
+          - generic "Scratchpad" [ref=e353]
+        - link "Mini Profile" [ref=e354] [cursor=pointer]:
+          - /url: ""
+          - generic "Mini Profile" [ref=e355]
+        - link "Agency profile" [ref=e356] [cursor=pointer]:
+          - /url: ""
+          - generic "Agency profile" [ref=e357]
+        - link "How did you hear about us?" [ref=e358] [cursor=pointer]:
+          - /url: ""
+          - generic "How did you hear about us?" [ref=e359]
+        - link "Referrals" [ref=e360] [cursor=pointer]:
+          - /url: ""
+          - generic "Referrals" [ref=e361]
+      - text:  
+  - contentinfo [ref=e362]:
+    - paragraph [ref=e363]: © IBS Software 2025, All Rights Reserved.
+    - img "Powered by iTravel" [ref=e364]
+  - text: + + +  + + + + + + + + +  + + + + + + + +  + +  +  + + + + + + + + + + +    + + + + + + +
+```

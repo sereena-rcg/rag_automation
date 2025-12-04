@@ -1,0 +1,13 @@
+{
+  "name": "Retrieve booking and capture Total Amount Paid",
+  "intent": "retrieve_booking",
+  "inputs": { "bookingId": "G22232" },
+  "steps": [
+    { "action": "goto", "url": "https://sit1.royalx.rccl.com/iTravel/shopping/static/7.0.296/en_US/A5/pages/peacoc-index.html#/", "waitUntil": "domcontentloaded", "description": "Selling App page loaded" },
+    { "action": "click", "module": "selling-app", "locator": "RetrieveBookingsTab", "description": "Clicked on Retrieve Bookings tab" },
+    { "action": "fill", "module": "selling-app", "locator": "BookingIdInput", "valueFrom": "bookingId", "description": "Booking ID entered" },
+    { "action": "click", "module": "selling-app", "locator": "SearchButton", "description": "Search button clicked" },
+    { "action": "waitForLoadState", "state": "networkidle", "description": "Network idle, results should be loaded" },
+    { "action": "captureText", "module": "selling-app", "locator": "TotalAmountPaidSpan", "var": "totalAmountPaid", "description": "Total Amount Paid (Selling App)" }
+  ]
+}

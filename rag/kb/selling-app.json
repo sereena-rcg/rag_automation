@@ -1,0 +1,21 @@
+{
+  "RetrieveBookingsTab": {
+    "selector": "a.mt_ret",
+    "text": "Retrieve Bookings",
+    "description": "Retrieve Bookings tab in Selling App"
+  },
+  "BookingIdInput": {
+    "selector": "input[placeholder='Booking Ref No/CartID']",
+    "description": "Booking ID input field"
+  },
+  "SearchButton": {
+    "selector": "button.btn-primary.pull-right",
+    "text": "Search",
+    "description": "Search button in Retrieve Bookings"
+  },
+  "TotalAmountPaidSpan": {
+    "selector": "div.pass_item >> span.pass_value",
+    "nth": 3,
+    "description": "Total Amount Paid (4th pass_value span)"
+  }
+}

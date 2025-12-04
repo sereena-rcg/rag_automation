@@ -1,0 +1,11 @@
+{
+  "name": "rag-test-generator",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "gen": "node rag-cli.js"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.43.0"
+  }
+}

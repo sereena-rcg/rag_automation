@@ -1,0 +1,9 @@
+{
+  "HamburgerMenu": { "selector": "span.trigger" },
+  "FinanceMenuItem": { "selector": "li:has(span.financial)" },
+  "BookingEnquiriesLink": { "selector": "a.financeandaccounts\\.bookingEnquiries" },
+  "BookingFinancialEnquiryLink": { "selector": "a.financeandaccounts\\.bookingEnquiries\\.bookingFinancialEnquiry" },
+  "BookingSearchInput": { "selector": "input#bookingNumber" },
+  "ViewDetailsButton": { "selector": "input.btn.blue[value='View Details']" },
+  "TotalReceivedInput": { "selector": "input[name='widgetmodel_billingVO_totalReceivedFormat']" }
+}

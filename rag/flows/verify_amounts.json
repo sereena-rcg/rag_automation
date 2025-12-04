@@ -1,0 +1,29 @@
+{
+  "name": "Verify Selling App Total Paid equals Accounting Total Received",
+  "intent": "verify_amounts",
+  "inputs": { "bookingId": "G22232" },
+  "steps": [
+    { "action": "goto", "url": "https://sit1.royalx.rccl.com/iTravel/shopping/static/7.0.296/en_US/A5/pages/peacoc-index.html#/", "waitUntil": "domcontentloaded", "description": "Selling App page loaded" },
+    { "action": "click", "module": "selling-app", "locator": "RetrieveBookingsTab", "description": "Clicked on Retrieve Bookings tab" },
+    { "action": "fill", "module": "selling-app", "locator": "BookingIdInput", "valueFrom": "bookingId", "description": "Booking ID entered" },
+    { "action": "click", "module": "selling-app", "locator": "SearchButton", "description": "Search button clicked" },
+    { "action": "waitForLoadState", "state": "networkidle", "description": "Network idle, results should be loaded" },
+    { "action": "captureText", "module": "selling-app", "locator": "TotalAmountPaidSpan", "var": "totalAmountPaid", "description": "Total Amount Paid (Selling App)" },
+
+    { "action": "goto", "url": "https://sit1.royalx.rccl.com/iTravel/production/static/7.0.300/en_US/base/pages/index.html", "waitUntil": "domcontentloaded", "description": "Finance & Accounting page loaded" },
+    { "action": "click", "module": "finance-accounting", "locator": "HamburgerMenu", "description": "Hamburger menu clicked" },
+    { "action": "click", "module": "finance-accounting", "locator": "FinanceMenuItem", "description": "Clicked Finance & Accounting" },
+    { "action": "click", "module": "finance-accounting", "locator": "BookingEnquiriesLink", "description": "Clicked Booking Enquiries" },
+    { "action": "click", "module": "finance-accounting", "locator": "BookingFinancialEnquiryLink", "description": "Clicked Booking Financial Enquiry" },
+    { "action": "fill", "module": "finance-accounting", "locator": "BookingSearchInput", "valueFrom": "bookingId", "description": "Booking Number entered in Accounting module" },
+    { "action": "blur", "module": "finance-accounting", "locator": "BookingSearchInput", "description": "Triggered blur event to load financial details" },
+    { "action": "waitForLoadState", "state": "networkidle", "description": "Network idle after blur" },
+    { "action": "click", "module": "finance-accounting", "locator": "ViewDetailsButton", "description": "Clicked View Details" },
+    { "action": "waitForLoadState", "state": "networkidle", "description": "Network idle after View Details" },
+    { "action": "captureValue", "module": "finance-accounting", "locator": "TotalReceivedInput", "var": "accountingAmountPaid", "description": "Total Received (Accounting summary)" },
+
+    { "action": "normalizeAmount", "var": "totalAmountPaid", "outVar": "normalizedSellingAmount", "description": "Normalized Selling App amount" },
+    { "action": "normalizeAmount", "var": "accountingAmountPaid", "outVar": "normalizedAccountingAmount", "description": "Normalized Accounting amount" },
+    { "action": "assertEqual", "left": "normalizedAccountingAmount", "right": "normalizedSellingAmount", "description": "Compared Selling vs Accounting amounts" }
+  ]
+}
